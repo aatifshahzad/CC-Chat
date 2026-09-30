@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0A0A0A" />
+    <meta name="color-scheme" content="dark" />
+    <title>HYLIOX — Templates that don't feel AI-made</title>
+    <meta name="description" content="8 premium website templates. Cursor / v0 / Lovable ready." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // Decide before first paint whether the loader runs, so it never flashes.
+      // Skipped for repeat visits in this tab and for reduced-motion users.
+      (function () {
+        var d = document.documentElement
+        try {
+          var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+          if (reduce || sessionStorage.getItem('hyliox:loaded')) d.classList.add('no-loader')
+        } catch (e) {
+          d.classList.add('no-loader')
+        }
+      })()
+    </script>
+    <style>
+      /* Critical above-the-fold CSS: page background + loader, before the bundle arrives. */
+      html,body{background:#0A0A0A;color:#FAFAFA;margin:0}
+      #loader{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:#0A0A0A;
+        transition:opacity .6s cubic-bezier(.16,1,.3,1),visibility .6s}
+      #loader.is-done{opacity:0;visibility:hidden}
+      .no-loader #loader{display:none}
+      .loader-mark{font:italic 400 clamp(56px,10vw,96px)/1 "Instrument Serif",Georgia,serif;letter-spacing:-.02em;
+        color:transparent;background:linear-gradient(100deg,rgba(250,250,250,.18) 30%,#D4FF4F 50%,rgba(250,250,250,.18) 70%);
+        background-size:200% 100%;-webkit-background-clip:text;background-clip:text;animation:ls 1.6s linear infinite}
+      .loader-bar{width:120px;height:1px;margin:28px auto 0;background:rgba(255,255,255,.08);overflow:hidden}
+      .loader-bar i{display:block;height:100%;background:#D4FF4F;transform-origin:left;animation:lb 3s cubic-bezier(.65,0,.35,1) forwards}
+      @keyframes ls{from{background-position:200% 0}to{background-position:-200% 0}}
+      @keyframes lb{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    </style>
+  </head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <div>
+        <div class="loader-mark">Hx</div>
+        <div class="loader-bar"><i></i></div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
