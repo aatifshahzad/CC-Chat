@@ -19,7 +19,7 @@ export const templates: Template[] = [
   { name: 'Oculus', sub: 'Photographer folio with full-bleed galleries.', span: 4, hue: '#FFB38A', layout: 'grid' },
   { name: 'Ledger', sub: 'Fintech product page with data-rich sections.', span: 4, hue: '#7CF0C5', layout: 'mono' },
   { name: 'Atelier', sub: 'Boutique agency, serif-forward and slow.', span: 4, hue: '#F2E6D0', layout: 'editorial' },
-  { name: 'Parallel', sub: 'Dev-tool docs + marketing in one shell.', span: 4, hue: '#C8A2FF', layout: 'stack' },
+  { name: 'Impeccable', sub: '@pbakaus/impeccable — polished product story with a premium editorial finish.', span: 4, hue: '#C8A2FF', layout: 'stack' },
   { name: 'Northwind', sub: 'Consultancy site with a real narrative arc.', span: 6, hue: '#8FD3FF', layout: 'editorial' },
   { name: 'Kinetic', sub: 'Launch page for hardware and physical product.', span: 6, hue: '#FF8F8F', layout: 'hero' },
 ]
@@ -131,7 +131,7 @@ export const faqs = [
   { q: 'Can I use a template for client work?', a: 'Yes. Each licence covers unlimited projects for you or your clients. You cannot resell the templates themselves as templates.' },
   { q: 'Is it really a one-time payment?', a: 'Yes. All prices are one-shot. No subscription, no seat fees, and updates to the templates you own are included.' },
   { q: 'Which frameworks are supported?', a: 'Templates ship as Vite + React. They port cleanly to Next.js; the setup guide covers the handful of changes needed.' },
-  { q: 'How is this different from a free template?', a: 'Free templates optimise for breadth. These optimise for one thing: a site with a point of view — type, rhythm and motion tuned so it does not read as generated.' },
+  { q: 'How is this different from a free template?', a: 'Free templates optimise for breadth. These optimise for one thing: a site with a point of view — type, rhythm and motion tuned so it doesn’t feel generic.' },
   { q: 'What if it is not right for me?', a: 'Email within 14 days of purchase and we will refund you, no questions asked.' },
-  { q: 'How does the Custom tier work?', a: 'After purchase you book a kickoff call. We design three bespoke sections in your brand and hand them over as code in the same structure as the templates.' },
+  { q: 'How does the Custom tier work?', a: 'After purchase you book a kickoff call. We design three bespoke sections in your brand and hand them over as code in the same structure as the template library.' },
 ]
